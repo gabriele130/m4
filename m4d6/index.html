@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+Esercizi
+# Esercizio
+## 💾 DATABASE UTENTI CON FILTRO
+### Usa bootstrap per creare un layout VELOCE, concentrati sulla parte in JS. fatto
+You are creating a frontend application that displays users received from an API and filter them nicely.
+Stai creando il frontend di un’applicazione che mostra gli utenti provenienti da un API e li filtra.
+Questi sono i tuoi compiti:
+– Mostra tutti gli utenti in una tabella partendo da questo API. Ricorda di usare ASYNC AWAIT!
+`https://jsonplaceholder.typicode.com/users`
+– Crea un dropdown con tre opzioni: “nome”, “username” e “email. Il dropdown sarà la prima parte del tuo filtro.
+—
+1. Crea un input di testo. Quando l’utente scrive qualcosa in questo input, la risposta dell’API dovrebbe venir filtrata e renderizzata usando sia il valore dell’input che l’opzione selezionata nel dropdown.
+2. Crea un funzione che crei una lista di nomi dalla lista di utenti. Esegui questa funziona al click di un bottone.
+3. Crea una funzione che crei, dall’array di utenti, un array di indirizzi in formato stringa. Segui l’esempio:
+—
+“`
+{ “street”: “Victor Plains”, “suite”: “Suite 879”, “city”: “Wisokyburgh”, “zipcode”: “90566-7771”, “geo”: { “lat”: “-43.9509”, “lng”: “-34.4618”}//Should become “Victor Plains, Suite 879, Wisokyburgh (90566-7771)”
+“`
+—
+### EXTRA:
+– Aggiungi un bottone ad ogni utente nella tabella che porti ad una pagina dettagli. Usa questo endpoint per raccogliere le informazioni relative ad un utente specifico. `https://jsonplaceholder.typicode.com/users/id_goes_here`
+– Aggiungi un bottone che ordini gli utenti per nome in senso ascendente E discendente. NON DUE BOTTONI, SOLO UNO!
+– Usa Google Maps per mostrare la posizione degli utenti. Puoi usare l’iframe della tab “share” -->
+
+    <h2>Users</h2>
+
+    <div class="container" id="mainCard">
+        <div  
+        id="newCard" class="card">
+
+
+        </div>
+    </div>
+    <div>
+        <h2>Search Users</h2>
+        <select name="Scegli" id="Select"> Select Filter
+            <option value="name">Name</option>
+            <option value="username">Username</option>
+            <option value="email">Email</option>
+        </select>
+        <input type="text" id="inputSearch">
+        <button id="buttonSearch">Cerca</button>
+    </div>
+
+
+
+
+
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
